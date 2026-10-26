@@ -13,12 +13,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F7F2E8;--bg2:#E9EFE5;--card:#FFFDF8;--ink:#23332B;--mute:#566359;--sage:#8FB09C;--accent:#B5833A;--accent-ink:#fff;
---c-clinic:#6F9C86;--c-cafe:#C98A62;--c-studio:#7F9BB0;--c-med:#B8984A;--line:rgba(35,51,43,.12);--r:26px;
+:root{color-scheme:dark;--bg:#14261C;--bg2:#1B3326;--card:#223D2E;--ink:#EDEBE3;--mute:#B9C2B0;--sage:#A3A878;--accent:#B8532A;--accent-ink:#fff;
+--c-clinic:#5FA183;--c-cafe:#C08A45;--c-studio:#A3A878;--c-med:#D0693A;--line:rgba(237,235,227,.14);--r:26px;
 --serif:'Fraunces',Georgia,serif;--sans:'Figtree',system-ui,sans-serif;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17211C;--bg2:#1E2B24;--card:#22302A;--ink:#F1EBDD;--mute:#B5BFB5;--line:rgba(241,235,221,.14);--accent:#D5A458}}
-:root[data-theme="dark"]{--bg:#17211C;--bg2:#1E2B24;--card:#22302A;--ink:#F1EBDD;--mute:#B5BFB5;--line:rgba(241,235,221,.14);--accent:#D5A458}
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
@@ -46,8 +44,7 @@ nav.small .in{padding-top:10px;padding-bottom:10px}
 .burger{display:none;background:none;border:1.5px solid var(--line);color:var(--ink);border-radius:12px;padding:8px 12px;font:600 .9rem var(--sans);cursor:pointer}
 @media(max-width:860px){.burger{display:block}.links{display:none;position:absolute;top:100%;left:12px;right:12px;flex-direction:column;align-items:stretch;background:var(--card);border-radius:var(--r);padding:20px;box-shadow:0 20px 40px -20px rgba(0,0,0,.35)}.links.open{display:flex}.links a{padding:6px 0}}
 /* hero */
-#top{min-height:100svh;display:flex;align-items:center;overflow:hidden;background:radial-gradient(120% 90% at 85% 10%,#d9e6d8 0%,transparent 60%),radial-gradient(90% 80% at 0 100%,#efdcc0 0%,transparent 60%),var(--bg)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) #top{background:radial-gradient(120% 90% at 85% 10%,#2c4338 0%,transparent 60%),var(--bg)}}
+#top{min-height:100svh;display:flex;align-items:center;overflow:hidden;background:radial-gradient(120% 90% at 85% 10%,#2F4A3A 0%,transparent 60%),radial-gradient(90% 80% at 0 100%,#4A2A1C 0%,transparent 60%),var(--bg)}
 .blob{position:absolute;border-radius:50%;filter:blur(8px);opacity:.55;will-change:transform}
 .b1{width:340px;height:340px;right:-90px;top:12%;background:var(--sage)}
 .b2{width:200px;height:200px;left:8%;bottom:8%;background:var(--c-cafe);opacity:.35}
@@ -69,7 +66,7 @@ a.card:hover,.card.h:hover{transform:translateY(-6px);box-shadow:0 22px 40px -24
 /* pillar sections */
 .split{display:grid;gap:44px;align-items:center}
 @media(min-width:860px){.split{grid-template-columns:1.05fr 1fr}.split.rev>:first-child{order:2}}
-.ph{aspect-ratio:4/5;border-radius:200px 200px var(--r) var(--r);background:linear-gradient(160deg,color-mix(in srgb,var(--pc) 55%,var(--bg)),color-mix(in srgb,var(--pc) 18%,var(--bg)));display:grid;place-items:center;color:var(--ink);font-size:.9rem;text-align:center;padding:20px;will-change:transform}
+.ph{aspect-ratio:4/5;border-radius:200px 200px var(--r) var(--r);background:linear-gradient(160deg,color-mix(in srgb,var(--pc) 38%,var(--bg)),color-mix(in srgb,var(--pc) 14%,var(--bg)));display:grid;place-items:center;color:var(--ink);font-size:.9rem;text-align:center;padding:20px;will-change:transform}
 .ph.sq{aspect-ratio:1;border-radius:var(--r)}
 .pill{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px;padding:0;list-style:none}
 .pill li{padding:7px 16px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.92rem}
@@ -93,7 +90,7 @@ fieldset{border:0;padding:0;margin:0 0 22px}
 #ok h3{font-size:2rem}
 .center{text-align:center}.center p{margin-inline:auto}
 /* footer */
-footer{background:#1F2D26;color:#EFE9DB;padding:70px 0 40px}
+footer{background:#0E1B14;color:#EFE9DB;padding:70px 0 40px}
 footer p,footer a{color:#C9D2C8}
 footer .cols{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
 footer h3{color:#EFE9DB;font-size:1.2rem}
@@ -106,7 +103,7 @@ footer h3{color:#EFE9DB;font-size:1.2rem}
 </head>
 <body>
 <nav id="nav"><div class="in">
-<a class="logo" href="#top" aria-label="Lyora Care home">Lyora Care</a>
+<a class="logo" href="#top" aria-label="Lyora Care home"><span style="color:#E0875A">Lyora</span> <span style="color:#C9CC93">Care</span></a>
 <button class="burger" id="bg" aria-expanded="false" aria-controls="lk">Menu</button>
 <div class="links" id="lk">
 <a href="#ecosystem">Ecosystem</a><a href="#clinic">Clinic</a><a href="#cafe">Café</a><a href="#studio">Studio</a><a href="#med">MED@LYORA</a>
